@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmniQC - Modern FASTQ Quality Control</title>
+    <meta name="description" content="OmniQC is a powerful desktop application for analyzing FASTQ sequencing data quality. Built for bioinformaticians.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <nav class="nav">
+            <div class="nav-brand">
+                <img src="logo.png" alt="OmniQC" class="nav-logo">
+                <span>OmniQC</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#download">Download</a>
+                <a href="https://github.com/ataumutozsoy/OmniQC" target="_blank">GitHub</a>
+            </div>
+        </nav>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Modern FASTQ Quality Control</h1>
+                <p class="hero-subtitle">
+                    Powerful, user-friendly desktop application for analyzing next-generation sequencing data quality. 
+                    Built for bioinformaticians who need fast, reliable insights.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://github.com/ataumutozsoy/OmniQC/releases" class="btn btn-primary">
+                        Download for Windows
+                    </a>
+                    <a href="https://github.com/ataumutozsoy/OmniQC" class="btn btn-secondary">
+                        View on GitHub
+                    </a>
+                </div>
+                <p class="hero-version">v1.0.0 | Windows 10/11 | Free & Open Source</p>
+            </div>
+            <div class="hero-image">
+                <img src="screenshot.png" alt="OmniQC Screenshot" class="app-screenshot">
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Comprehensive Quality Metrics</h2>
+        <p class="section-subtitle">Everything you need to assess your sequencing data quality</p>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">Q</div>
+                <h3>Per Base Quality</h3>
+                <p>Phred score distribution across all read positions with visual heatmaps</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">S</div>
+                <h3>Sequence Scores</h3>
+                <p>Overall quality distribution per read with pass/warn/fail assessment</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">GC</div>
+                <h3>GC Content</h3>
+                <p>Per-sequence GC percentage distribution and bias detection</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">D</div>
+                <h3>Duplication</h3>
+                <p>Sequence duplication levels for library complexity assessment</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">A</div>
+                <h3>Adapter Content</h3>
+                <p>Illumina adapter contamination detection and quantification</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">N</div>
+                <h3>N Content</h3>
+                <p>Ambiguous base detection and distribution analysis</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Export Section -->
+    <section class="export-section">
+        <div class="export-content">
+            <h2>Professional Reports</h2>
+            <p>Export detailed multi-page PDF reports with all metrics, charts, and quality assessments. 
+               Perfect for lab notebooks, publications, and sharing with collaborators.</p>
+            <ul class="export-features">
+                <li>PDF Export with all charts and tables</li>
+                <li>CSV Export for downstream analysis</li>
+                <li>Project-level summary reports</li>
+                <li>Batch analysis support</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <h2>Get Started</h2>
+        <p class="section-subtitle">Download OmniQC and start analyzing your sequencing data</p>
+        
+        <div class="download-card">
+            <div class="download-info">
+                <h3>OmniQC v1.0.0</h3>
+                <p>Windows 10/11 (64-bit)</p>
+                <ul>
+                    <li>4GB RAM minimum</li>
+                    <li>500MB storage</li>
+                    <li>Supports .fastq, .fq, .gz files</li>
+                </ul>
+            </div>
+            <a href="https://github.com/ataumutozsoy/OmniQC/releases" class="btn btn-primary btn-large">
+                Download Installer
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="logo.png" alt="OmniQC" class="footer-logo">
+                <p>Modern FASTQ Quality Control</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/ataumutozsoy/OmniQC">GitHub</a>
+                <a href="https://github.com/ataumutozsoy/OmniQC/issues">Report Issue</a>
+                <a href="https://github.com/ataumutozsoy/OmniQC/blob/main/LICENSE">MIT License</a>
+            </div>
+        </div>
+        <p class="footer-copyright">Open Source | Made for the Bioinformatics Community</p>
+    </footer>
+</body>
+</html>
