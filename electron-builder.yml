@@ -1,9 +1,9 @@
 # OmniQC - Electron Builder Configuration
 # https://www.electron.build/configuration
 
-appId: com.insilico.omniqc
+appId: org.omniqc.app
 productName: OmniQC
-copyright: Copyright © 2024 In Silico Bioinformatics
+copyright: Copyright © 2024 OmniQC Contributors
 
 directories:
   output: release

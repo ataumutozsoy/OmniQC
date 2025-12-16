@@ -5,7 +5,21 @@ import os
 import argparse
 from datetime import datetime
 
-DB_PATH = os.path.join(os.path.dirname(__file__), 'omniqc.db')
+# Determine database path
+# In production (PyInstaller), use AppData folder for writable database
+# In development, use local python folder
+def get_db_path():
+    if getattr(sys, 'frozen', False):
+        # Running as compiled exe (PyInstaller)
+        app_data = os.environ.get('APPDATA', os.path.expanduser('~'))
+        db_dir = os.path.join(app_data, 'OmniQC')
+        os.makedirs(db_dir, exist_ok=True)
+        return os.path.join(db_dir, 'omniqc.db')
+    else:
+        # Running as script (development)
+        return os.path.join(os.path.dirname(__file__), 'omniqc.db')
+
+DB_PATH = get_db_path()
 
 def get_db_connection():
     conn = sqlite3.connect(DB_PATH)

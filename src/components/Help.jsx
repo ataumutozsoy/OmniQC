@@ -169,7 +169,7 @@ const Help = ({ isOpen, onClose }) => {
                     {/* Version Info */}
                     <section className="text-center text-sm text-slate-400 pt-4 border-t border-slate-100">
                         <p>OmniQC v1.0 • Built for Bioinformaticians</p>
-                        <p className="mt-1">© 2024 In Silico Bioinformatics</p>
+                        <p className="mt-1">© 2024 OmniQC Contributors</p>
                     </section>
                 </div>
 

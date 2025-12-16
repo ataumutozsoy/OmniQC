@@ -186,7 +186,7 @@ Bu proje MIT Lisansi altinda lisanslanmistir - detaylar icin [LICENSE](LICENSE) 
 
 ## Author / Yazar
 
-**In Silico Bioinformatics**
+**OmniQC Contributors**
 
 ---
 

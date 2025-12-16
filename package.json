@@ -2,7 +2,7 @@
   "name": "omniqc",
   "version": "1.0.0",
   "description": "FASTQ Quality Control Application for Bioinformatics",
-  "author": "In Silico Bioinformatics",
+  "author": "OmniQC Contributors",
   "main": "electron/main.js",
   "scripts": {
     "dev": "concurrently \"vite\" \"wait-on tcp:5173 && cross-env NODE_ENV=development electron .\"",
