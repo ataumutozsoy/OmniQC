@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #0f172a;
+    --color-secondary: #1e293b;
+    --color-accent: #38bdf8;
+
+    /* Adding brand color used in App.jsx */
+    --color-brand: #0ea5e9;
+    /* Sky 500 */
+    --color-brand-light: #e0f2fe;
+    /* Sky 100 */
+    --color-brand-dark: #0284c7;
+    /* Sky 600 */
+}

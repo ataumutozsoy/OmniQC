@@ -1,0 +1,50 @@
+# OmniQC - Electron Builder Configuration
+# https://www.electron.build/configuration
+
+appId: com.insilico.omniqc
+productName: OmniQC
+copyright: Copyright © 2024 In Silico Bioinformatics
+
+directories:
+  output: release
+  buildResources: build
+
+files:
+  - electron/**/*
+  - dist/**/*
+  - package.json
+
+extraResources:
+  - from: python/dist/
+    to: python/
+    filter:
+      - "**/*"
+
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: build/icon.ico
+  artifactName: ${productName}-${version}-Setup.${ext}
+  signAndEditExecutable: false
+
+nsis:
+  oneClick: false
+  perMachine: true
+  allowToChangeInstallationDirectory: true
+  installerIcon: build/icon.ico
+  uninstallerIcon: build/icon.ico
+  installerHeaderIcon: build/icon.ico
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: OmniQC
+
+# Optional: Mac and Linux builds
+# mac:
+#   target: dmg
+#   icon: src/assets/icons/omniqc_logo.icns
+
+# linux:
+#   target: AppImage
+#   icon: src/assets/icons/omniqc_logo.png
