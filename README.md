@@ -2,7 +2,6 @@
 
 <div align="center">
 
-![OmniQC Logo](src/assets/icons/omniqc_logo.png)
 
 ### Modern FASTQ Quality Control Application
 ### Modern FASTQ Kalite Kontrol Uygulamasi
